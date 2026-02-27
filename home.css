@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    background-color: #B0FFD3;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 3%;
+}
+
+nav h1 {
+    color: #36454F;
+}
+
+.Left-side {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8FAFB;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-line {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.third-line {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.Income {
+    display: flex;
+    flex-direction: row;
+    background-color: #B0FFD3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Income h2 {
+    color: #36454F;
+}
+
+.Income-Details {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.Income-Details input, select {
+    border-radius: 10px;
+    display: flex;
+}
+
+.Income-Details select {
+    margin-left: 10px;
+}
+
+.Income-Details input {
+    margin-left: 3px;
+    padding: 5px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-self: center;
+}
+
+.Income-Details p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #36454F;
+}
+
+.Needs-var {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Needs-var img {
+    height: 5px;
+}
+
+
