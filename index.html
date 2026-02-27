@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
+    <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
-    <link rel="stylesheet" href="styles.css">
-    <h1>Budget Calculator</h1>
-
-    <section>
-        <h2>Gross Income</h2>
-    </section>
-
-    <section>
-        <h2>Needs</h2>
-        <p>Housing</p>
-        <p>Utilities</p>
-        <p>Food</p>
-        <p>Healthcare</p>
-        <p>Loans</p>
-        <button>Add Expense</button>
-    </section>
-
-    <section>
-        <h2>Wants</h2>
-        <p>Housing</p>
-        <p>Utilities</p>
-        <p>Food</p>
-        <p>Healthcare</p>
-        <p>Loans</p>
-        <button>Add Expense</button>
-    </section>
-
-    <section>
-        <h2>Savings</h2>
-        <p>401k</p>
-        <p>College Savings</p>
-        <p>Emergency Fund</p>
-        <button>Add Expense</button>
-    </section>
-
-    <section>
-        <h2>Misc</h2>
-        <button>Add Expense</button>
-    </section>
-
-    <section>
-        <p>Gross Monthly Income</p>
-        <p>Gross Annual Income</p>
-    </section>
+    <nav>
+        <h1>Budget Calculator</h1>
+    </nav>
+    <main>
+        <section class="Left-side">
+            <section class="Income">
+                <h2>Gross Income</h2>
+                <section class="Income-Details">
+                    <p>$</p>
+                    <input type="text" class="income-amount" name="income-amount">
+                    <select name="income-frequency" id="income-frequency">
+                        <option value="monthly">Monthly</option>
+                        <option value="annually">Annually</option>
+                        <option value="biweekly">Bi-Weekly</option>
+                    </select>
+                </section>
+            </section>
+            <section class="second-line">
+                <section class="Needs">
+                    <section class="Needs-var">
+                        <h2>Needs</h2>
+                        <img src="Images/Minus.png">
+                    </section>
+                    <p>Housing</p>
+                    <p>Utilities</p>
+                    <p>Food</p>
+                    <p>Healthcare</p>
+                    <p>Loans</p>
+                    <button>Add Expense</button>
+                </section>
+                <section class="Wants">
+                    <h2>Wants</h2>
+                    <p>Housing</p>
+                    <p>Utilities</p>
+                    <p>Food</p>
+                    <p>Healthcare</p>
+                    <p>Loans</p>
+                    <button>Add Expense</button>
+                </section>
+            </section>
+            <section class="third-line">
+                <section class="Savings">
+                    <h2>Savings</h2>
+                    <p>401k</p>
+                    <p>College Savings</p>
+                    <p>Emergency Fund</p>
+                    <button>Add Expense</button>
+                </section>
+                <section class="Misc">
+                    <h2>Misc</h2>
+                    <button>Add Expense</button>
+                </section>
+            </section>
+        </section>
+        <section class="Right-side">
+            <section class="Summary">
+                <p>Gross Monthly Income</p>
+                <p>Gross Annual Income</p>
+            </section>
+        </section>
+    </main>
     <script src="calculator.js"></script>
 </body>
+
 </html>
