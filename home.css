@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 main {
@@ -98,10 +100,34 @@ nav h1 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: #B0FFD3;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .Needs-var img {
     height: 5px;
 }
 
+.Needs-inputs, .Wants-inputs, .savings-inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: #d4fce8;
+    padding: 10px;
 
+}
+
+.Needs-inputs p, .Wants-inputs p, .savings-inputs p {
+    display: inline-flex;
+}
+
+.Needs-inputs input, .Wants-inputs input, .savings-inputs input {
+    max-width: 120px;
+    min-width: 120px;
+}
+
+button {
+    background-color: #d4fce8;
+    border: none;
+    text-align:right;
+}
