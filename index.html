@@ -18,7 +18,7 @@
                 <h2>Gross Income</h2>
                 <section class="Income-Details">
                     <p>$</p>
-                    <input type="text" class="income-amount" name="income-amount">
+                    <input type="number" class="income-amount" name="income-amount" id="income-amount">
                     <select name="income-frequency" id="income-frequency">
                         <option value="monthly">Monthly</option>
                         <option value="annually">Annually</option>
@@ -35,95 +35,126 @@
                     <section class="Needs-inputs">
                         <article class="housing">
                             <p>Housing</p>
-                            <label for="housing-amount">$</label>
-                            <input type="number" id="housing-amount">
+                            <article class="input-fields">
+                                <label for="housing-amount">$</label>
+                                <input type="number" id="housing-amount">
+                            </article>
                         </article>
                         <article class="utilities">
                             <p>Utilities</p>
-                            <label for="utilities-amount">$</label>
-                            <input type="number" id="utilities-amount">
+                            <article class="input-fields">
+                                <label for="utilities-amount">$</label>
+                                <input type="number" id="utilities-amount">
+                            </article>
                         </article>
                         <article class="food">
                             <p>Food</p>
-                            <label for="food-amount">$</label>
-                            <input type="number" id="food-amount">
+                            <article class="input-fields">
+                                <label for="food-amount">$</label>
+                                <input type="number" id="food-amount">
+                            </article>
                         </article>
                         <article class="healthcare">
                             <p>Healthcare</p>
-                            <label for="healthcare-amount">$</label>
-                            <input type="number" id="healthcare-amount">
+                            <article class="input-fields">
+                                <label for="healthcare-amount">$</label>
+                                <input type="number" id="healthcare-amount">
+                            </article>
                         </article>
                         <article class="loans">
                             <p>Loans</p>
-                            <label for="loans-amount">$</label>
-                            <input type="number" id="loans-amount">
+                            <article class="input-fields">
+                                <label for="loans-amount">$</label>
+                                <input type="number" id="loans-amount">
+                            </article>
                         </article>
                         <article class="add-expense">
                             <button>Add Expense</button>
                             <img src="Images/Plus.svg">
                         </article>
                     </section>
-                    
+
                 </section>
                 <section class="Wants">
-                    <h2>Wants</h2>
+                    <section class="Wants-var">
+                        <h2>Wants</h2>
+                        <img src="Images/Minus.png">
+                    </section>
                     <section class="Wants-inputs">
                         <article class="housing">
                             <p>Housing</p>
-                            <label for="housing-amount">$</label>
-                            <input type="number" id="wants-housing-amount">
+                            <article class="input-fields">
+                                <label for="housing-amount">$</label>
+                                <input type="number" id="wants-housing-amount">
+                            </article>
                         </article>
                         <article class="utilities">
                             <p>Utilities</p>
-                            <label for="utilities-amount">$</label>
-                            <input type="number" id="wants-utilities-amount">
+                            <article class="input-fields">
+                                <label for="utilities-amount">$</label>
+                                <input type="number" id="wants-utilities-amount">
+                            </article>
                         </article>
                         <article class="food">
                             <p>Food</p>
-                            <label for="food-amount">$</label>
-                            <input type="number" id="wants-food-amount">
+                            <article class="input-fields">
+                                <label for="food-amount">$</label>
+                                <input type="number" id="wants-food-amount">
+                            </article>
                         </article>
                         <article class="add-expense">
                             <button>Add Expense</button>
                             <img src="Images/Plus.svg">
                         </article>
                     </section>
-                    
+
                 </section>
             </section>
             <section class="third-line">
                 <section class="Savings">
-                    <h2>Savings</h2>
+                    <section class="Savings-var">
+                        <h2>Savings</h2>
+                        <img src="Images/Minus.png">
+                    </section>
                     <section class="savings-inputs">
-                        <article class="401k">
+                        <article class="retirement">
                             <p>401K</p>
-                            <label for="401k-amount">$</label>
-                            <input type="number" id="401k-amount">
+                            <article class="input-fields">
+                                <label for="retirement-amount">$</label>
+                                <input type="number" id="retirement-amount">
+                            </article>
                         </article>
                         <article class="college-savings">
                             <p>College Savings</p>
-                            <label for="college-amount">$</label>
-                            <input type="number" id="college-amount">
+                            <article class="input-fields">
+                                <label for="college-amount">$</label>
+                                <input type="number" id="college-amount">
+                            </article>
                         </article>
                         <article class="emergency-fund">
                             <p>Emergency Fund</p>
-                            <label for="emergency-amount">$</label>
-                            <input type="number" id="emergency-amount">
+                            <article class="input-fields">
+                                <label for="emergency-amount">$</label>
+                                <input type="number" id="emergency-amount">
+                            </article>
                         </article>
                         <article class="add-expense">
                             <button>Add Expense</button>
                             <img src="Images/Plus.svg">
                         </article>
-                        
+
                     </section>
-                    
+
                 </section>
                 <section class="Misc">
-                    <h2>Misc</h2>
+                    <section class="Savings-var">
+                        <h2>Misc</h2>
+                        <img src="Images/Minus.png">
+                    </section>
                     <article class="add-expense">
-                            <button>Add Expense</button>
-                            <img src="Images/Plus.svg">
-                        </article>
+                        <button>Add Expense</button>
+                        <img src="Images/Plus.svg">
+                    </article>
                 </section>
             </section>
         </section>
@@ -133,6 +164,7 @@
                 <p>Gross Annual Income</p>
             </section>
         </section>
+        <p id="final-budget">10</p>
     </main>
     <script src="calculator.js"></script>
 </body>

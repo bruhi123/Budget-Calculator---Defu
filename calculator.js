@@ -1,3 +1,25 @@
+const needsHousing = document.getElementById('housing-amount');
+const needsUtilities = document.getElementById('utilities-amount');
+const needsFood = document.getElementById('food-amount');
+const healthcare = document.getElementById('healthcare-amount');
+const loans = document.getElementById('loans-amount');
+
+const wantsHousing = document.getElementById('wants-housing-amount');
+const wantsUtilities = document.getElementById('wants-utilities-amount');
+const wantsFood = document.getElementById('wants-food-amount');
+
+const retirementAmount = document.getElementById('retirement-amount');
+const collegeAmount = document.getElementById('college-amount');
+const emergencyAmount = document.getElementById('emergency-amount');
+
+
+const incomeAmount = document.getElementById('income-amount');
+const finalBudget = document.getElementById('final-budget');
+
+
+
+
+
 let grossIncome = 0;
 
 function calculateFederalTax(taxableIncome) { 
@@ -18,3 +40,10 @@ function calculateFederalTax(taxableIncome) {
 
     return tax;
 }
+
+function calculateBudget() {
+    let total = incomeAmount.value - needsHousing.value - needsUtilities.value - needsFood.value - healthcare.value - loans.value - retirementAmount.value - collegeAmount.value - emergencyAmount.value - wantsHousing.value - wantsUtilities.value - wantsFood.value
+    finalBudget.textContent(total); 
+}
+
+

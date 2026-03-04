@@ -40,16 +40,11 @@ nav h1 {
     flex-direction: column;
 }
 
-.second-line {
+.second-line, .third-line {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-}
-
-.third-line {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    gap: 30px;
 }
 
 .Income {
@@ -95,7 +90,7 @@ nav h1 {
     color: #36454F;
 }
 
-.Needs-var {
+.Needs-var, .Wants-var, .Savings-var {
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -103,6 +98,7 @@ nav h1 {
     background-color: #B0FFD3;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    padding: 10px;
 }
 
 .Needs-var img {
@@ -114,6 +110,7 @@ nav h1 {
     flex-direction: column;
     background-color: #d4fce8;
     padding: 10px;
+    gap:10px;
 
 }
 
@@ -130,4 +127,24 @@ button {
     background-color: #d4fce8;
     border: none;
     text-align:right;
+    cursor: pointer;
+}
+
+.add-expense {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #d4fce8;
+    align-items:center;
+
+}
+
+.retirement, .college-savings, .emergency-fund, .housing, .utilities, .food, .healthcare, .loans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.third-line {
+    padding-right: 100px;
 }
